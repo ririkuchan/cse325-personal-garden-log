@@ -24,10 +24,12 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        # プロジェクトファイルがあるフォルダを指定してビルド
+        run: dotnet build cse325-garden-log-blazor/cse325-garden-log-blazor.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        # パブリッシュ先も同様にプロジェクトファイルを指定
+        run: dotnet publish cse325-garden-log-blazor/cse325-garden-log-blazor.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -47,7 +49,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-      
+       
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -62,4 +64,3 @@ jobs:
           app-name: 'cse325-garden-log-ririku'
           slot-name: 'Production'
           package: .
-          
