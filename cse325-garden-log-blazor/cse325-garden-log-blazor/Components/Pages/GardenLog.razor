@@ -1,0 +1,60 @@
+@page "/garden"
+@using cse325_garden_log_blazor.Data
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@inject ApplicationDbContext DbContext
+@rendermode InteractiveServer
+
+<h3>My Garden Log</h3>
+
+<div class="entry-form">
+    <input @bind="newPlant.Name" placeholder="Plant Name" />
+    <input @bind="newPlant.DatePlanted" type="date" />
+    <textarea @bind="newPlant.Notes" placeholder="Notes"></textarea>
+    <button @onclick="SaveRecord">Save Record</button>
+</div>
+
+<ul>
+    @foreach (var record in logs)
+    {
+        <li>
+            @record.Name - @record.DatePlanted.ToShortDateString() - @record.Notes
+            <button @onclick="() => DeleteRecord(record)">Delete</button>
+        </li>
+    }
+</ul>
+
+@code {
+    private List<PlantRecord> logs = new();
+    private PlantRecord newPlant = new() { DatePlanted = DateTime.Now }; // 初期値設定
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadLogs();
+    }
+
+    private async Task LoadLogs()
+    {
+        logs = await DbContext.PlantRecords.ToListAsync();
+    }
+
+    private async Task SaveRecord()
+    {
+        // 入力チェック（念のため）
+        if (string.IsNullOrWhiteSpace(newPlant.Name)) return;
+
+        DbContext.PlantRecords.Add(newPlant);
+        await DbContext.SaveChangesAsync();
+        
+        newPlant = new() { DatePlanted = DateTime.Now }; // リセット
+        await LoadLogs(); // 最新状態を再読み込み
+    }
+
+    private async Task DeleteRecord(PlantRecord record)
+    {
+        DbContext.PlantRecords.Remove(record);
+        await DbContext.SaveChangesAsync();
+        await LoadLogs();
+    }
+}
