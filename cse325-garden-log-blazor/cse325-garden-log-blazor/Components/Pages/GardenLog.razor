@@ -6,49 +6,69 @@
 @inject ApplicationDbContext DbContext
 @rendermode InteractiveServer
 
-<h3>My Garden Log</h3>
+<div class="container mt-4">
+    <h2 class="mb-4">My Garden Log</h2>
 
-<div class="entry-form">
-    <input @bind="newPlant.Name" placeholder="Plant Name" />
-    <input @bind="newPlant.DatePlanted" type="date" />
-    <textarea @bind="newPlant.Notes" placeholder="Notes"></textarea>
-    <button @onclick="SaveRecord">Save Record</button>
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Add New Plant</h5>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <input @bind="newPlant.Name" class="form-control" placeholder="Plant Name" />
+                </div>
+                <div class="col-md-3">
+                    <input @bind="newPlant.DatePlanted" type="date" class="form-control" />
+                </div>
+                <div class="col-md-4">
+                    <input @bind="newPlant.Notes" class="form-control" placeholder="Notes" />
+                </div>
+                <div class="col-md-2">
+                    <button @onclick="SaveRecord" class="btn btn-primary w-100">Save Record</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>Plant Name</th>
+                <th>Date Planted</th>
+                <th>Notes</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var record in logs)
+            {
+                <tr>
+                    <td>@record.Name</td>
+                    <td>@record.DatePlanted.ToShortDateString()</td>
+                    <td>@record.Notes</td>
+                    <td>
+                        <button @onclick="() => DeleteRecord(record)" class="btn btn-sm btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
-
-<ul>
-    @foreach (var record in logs)
-    {
-        <li>
-            @record.Name - @record.DatePlanted.ToShortDateString() - @record.Notes
-            <button @onclick="() => DeleteRecord(record)">Delete</button>
-        </li>
-    }
-</ul>
 
 @code {
     private List<PlantRecord> logs = new();
-    private PlantRecord newPlant = new() { DatePlanted = DateTime.Now }; // 初期値設定
+    private PlantRecord newPlant = new() { DatePlanted = DateTime.Now };
 
-    protected override async Task OnInitializedAsync()
-    {
-        await LoadLogs();
-    }
+    protected override async Task OnInitializedAsync() => await LoadLogs();
 
-    private async Task LoadLogs()
-    {
-        logs = await DbContext.PlantRecords.ToListAsync();
-    }
+    private async Task LoadLogs() => logs = await DbContext.PlantRecords.ToListAsync();
 
     private async Task SaveRecord()
     {
-        // 入力チェック（念のため）
         if (string.IsNullOrWhiteSpace(newPlant.Name)) return;
-
         DbContext.PlantRecords.Add(newPlant);
         await DbContext.SaveChangesAsync();
-        
-        newPlant = new() { DatePlanted = DateTime.Now }; // リセット
-        await LoadLogs(); // 最新状態を再読み込み
+        newPlant = new() { DatePlanted = DateTime.Now };
+        await LoadLogs();
     }
 
     private async Task DeleteRecord(PlantRecord record)
