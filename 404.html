@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Garden Log</title>
+    <base href="/cse325-personal-garden-log/" />
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Personal Garden Log</h1>
+            <nav>
+                <a href="">Home</a> | <a href="">Records</a> | <a href="">Login</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="entry-form">
+                <h2>Add New Plant Record</h2>
+                <form id="garden-form">
+                    <label for="plant-name">Plant Name:</label>
+                    <input type="text" id="plant-name" placeholder="e.g., Sunflower" required>
+
+                    <label for="date-planted">Date Planted:</label>
+                    <input type="date" id="date-planted" required>
+
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" placeholder="How is it growing?"></textarea>
+
+                    <button type="submit">Save Record</button>
+                </form>
+            </section>
+
+            <section id="records-list">
+                <h2>Plant Records</h2>
+                <div id="log-container" class="grid-container">
+                    <!-- 保存されたデータがここに表示されます -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Ririku's Garden Log</p>
+        </footer>
+    </div>
+
+    <script>
+        const form = document.getElementById('garden-form');
+        const container = document.getElementById('log-container');
+
+        function loadLogs() {
+            const logs = JSON.parse(localStorage.getItem('gardenLogs') || '[]');
+            container.innerHTML = logs.length === 0 ? '<p>No records yet.</p>' : '';
+            logs.forEach(record => {
+                const card = document.createElement('div');
+                card.className = 'log-card';
+                card.innerHTML = `<h3>${record.plantName}</h3><p><strong>Planted:</strong> ${record.datePlanted}</p><p>${record.notes}</p>`;
+                container.appendChild(card);
+            });
+        }
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const record = {
+                plantName: document.getElementById('plant-name').value,
+                datePlanted: document.getElementById('date-planted').value,
+                notes: document.getElementById('notes').value
+            };
+            let logs = JSON.parse(localStorage.getItem('gardenLogs') || '[]');
+            logs.push(record);
+            localStorage.setItem('gardenLogs', JSON.stringify(logs));
+            form.reset();
+            loadLogs();
+        });
+
+        loadLogs();
+    </script>
+</body>
+</html>
