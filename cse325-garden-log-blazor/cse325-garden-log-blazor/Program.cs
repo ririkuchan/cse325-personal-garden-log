@@ -32,7 +32,13 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddIdentityCore<ApplicationUser>(options =>
     {
-        options.SignIn.RequireConfirmedAccount = false; // 修正箇所：ここを false に変更
+        // ログイン要件の緩和設定
+        options.SignIn.RequireConfirmedAccount = false; 
+        
+        // ロックアウト（ログイン不可状態）を無効にする設定
+        options.Lockout.AllowedForNewUsers = false;
+        options.Lockout.MaxFailedAccessAttempts = 999;
+        
         options.Stores.SchemaVersion = IdentitySchemaVersions.Version3;
     })
     .AddEntityFrameworkStores<ApplicationDbContext>()
