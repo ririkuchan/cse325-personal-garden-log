@@ -24,12 +24,12 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        # プロジェクトのサブフォルダを指定してビルド
-        run: dotnet build cse325-garden-log-blazor/cse325-garden-log-blazor.csproj --configuration Release
+        # パスを「cse325-garden-log-blazor/cse325-garden-log-blazor/」に変更
+        run: dotnet build cse325-garden-log-blazor/cse325-garden-log-blazor/cse325-garden-log-blazor.csproj --configuration Release
 
       - name: dotnet publish
-        # パブリッシュ先も同様に指定
-        run: dotnet publish cse325-garden-log-blazor/cse325-garden-log-blazor.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        # こちらも同様に変更
+        run: dotnet publish cse325-garden-log-blazor/cse325-garden-log-blazor/cse325-garden-log-blazor.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
