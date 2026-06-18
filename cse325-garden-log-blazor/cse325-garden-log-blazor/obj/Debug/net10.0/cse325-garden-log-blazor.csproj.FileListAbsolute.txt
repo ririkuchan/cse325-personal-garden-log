@@ -229,4 +229,3 @@ C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-gar
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor\obj\Debug\net10.0\cse325-garden-log-blazor.pdb
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor\obj\Debug\net10.0\cse325-garden-log-blazor.genruntimeconfig.cache
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor\obj\Debug\net10.0\ref\cse325-garden-log-blazor.dll
-C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor\bin\Debug\net10.0\Data\app.db

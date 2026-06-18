@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cse325-garden-log-blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c5a7c51f470cf00526149faba3cd8e3f975414f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48f73331286e1d66c5a7e2e09eafb53d72d18032")]
 [assembly: System.Reflection.AssemblyProductAttribute("cse325-garden-log-blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cse325-garden-log-blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
