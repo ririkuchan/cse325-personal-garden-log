@@ -36,7 +36,7 @@
             <section id="records-list">
                 <h2>Plant Records</h2>
                 <div id="log-container" class="grid-container">
-                    <!-- 保存されたデータがここに表示されます -->
+                    <!-- Saved logs appear here -->
                 </div>
             </section>
         </main>
@@ -50,15 +50,30 @@
         const form = document.getElementById('garden-form');
         const container = document.getElementById('log-container');
 
+        // Function to load and display logs
         function loadLogs() {
             const logs = JSON.parse(localStorage.getItem('gardenLogs') || '[]');
             container.innerHTML = logs.length === 0 ? '<p>No records yet.</p>' : '';
-            logs.forEach(record => {
+            
+            logs.forEach((record, index) => {
                 const card = document.createElement('div');
                 card.className = 'log-card';
-                card.innerHTML = `<h3>${record.plantName}</h3><p><strong>Planted:</strong> ${record.datePlanted}</p><p>${record.notes}</p>`;
+                card.innerHTML = `
+                    <h3>${record.plantName}</h3>
+                    <p><strong>Planted:</strong> ${record.datePlanted}</p>
+                    <p>${record.notes}</p>
+                    <button class="delete-btn" onclick="deleteLog(${index})">Delete</button>
+                `;
                 container.appendChild(card);
             });
+        }
+
+        // Function to delete a specific log
+        function deleteLog(index) {
+            let logs = JSON.parse(localStorage.getItem('gardenLogs') || '[]');
+            logs.splice(index, 1);
+            localStorage.setItem('gardenLogs', JSON.stringify(logs));
+            loadLogs();
         }
 
         form.addEventListener('submit', function(e) {
