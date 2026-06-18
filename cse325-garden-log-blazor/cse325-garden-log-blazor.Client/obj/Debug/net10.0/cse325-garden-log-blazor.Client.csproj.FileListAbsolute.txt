@@ -209,8 +209,6 @@ C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-gar
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\cse325-garden-log-blazor.Client.4lnwb4gsyk.wasm
-C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\cse325-garden-log-blazor.Client.1m68jkq3lc.pdb
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\dotnet.js
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\blazor.webassembly.js.gz
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.y0sndbe2xe.wasm.gz
@@ -422,8 +420,6 @@ C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-gar
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
-C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\cse325-garden-log-blazor.Client.4lnwb4gsyk.wasm.gz
-C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\cse325-garden-log-blazor.Client.1m68jkq3lc.pdb.gz
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\dotnet.js.gz
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\cse325-garden-log-blazor.Client.staticwebassets.runtime.json
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\cse325-garden-log-blazor.Client.staticwebassets.endpoints.json
@@ -1070,9 +1066,6 @@ C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-gar
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\x36gjzfvle-{0}-tjcz0u77k5-tjcz0u77k5.gz
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\tgjlyqvndl-{0}-tptq2av103-tptq2av103.gz
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\xkw5f93sxi-{0}-lfu7j35m59-lfu7j35m59.gz
-C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\1ik4sf62k4-{0}-4lnwb4gsyk-4lnwb4gsyk.gz
-C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\tv7boemjvi-{0}-1m68jkq3lc-1m68jkq3lc.gz
-C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\tqrchidyhu-{0}-x29kjafild-x29kjafild.gz
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\staticwebassets.development.json
@@ -1083,3 +1076,10 @@ C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-gar
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\refint\cse325-garden-log-blazor.Client.dll
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\cse325-garden-log-blazor.Client.pdb
 C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\ref\cse325-garden-log-blazor.Client.dll
+C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\cse325-garden-log-blazor.Client.8yb0b75334.wasm
+C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\cse325-garden-log-blazor.Client.sndsx8vb50.pdb
+C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\cse325-garden-log-blazor.Client.8yb0b75334.wasm.gz
+C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\bin\Debug\net10.0\wwwroot\_framework\cse325-garden-log-blazor.Client.sndsx8vb50.pdb.gz
+C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\1ik4sf62k4-{0}-8yb0b75334-8yb0b75334.gz
+C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\tv7boemjvi-{0}-sndsx8vb50-sndsx8vb50.gz
+C:\Users\ririk\OneDrive\デスクトップ\cse325-personal-garden-log\cse325-garden-log-blazor\cse325-garden-log-blazor.Client\obj\Debug\net10.0\compressed\tqrchidyhu-{0}-xzs3dyg2qc-xzs3dyg2qc.gz

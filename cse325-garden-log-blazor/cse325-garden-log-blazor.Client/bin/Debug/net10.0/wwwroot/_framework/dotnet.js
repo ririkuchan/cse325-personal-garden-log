@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "cse325-garden-log-blazor.Client",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-iZOXTEH98DZpN9j0xPaYXLNc9ZiFWZm2k4IKw6/DET8=",
+    "hash": "sha256-3/l72QfD9uwd0u5dOKtbUxWBzVr7GBPwFhfajGxQpF8=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.mx9wzm9o5h.js"
@@ -1254,16 +1254,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "cse325-garden-log-blazor.Client.wasm",
-        "name": "cse325-garden-log-blazor.Client.4lnwb4gsyk.wasm",
-        "integrity": "sha256-mEXydX7sAszoSjKQUhMKJCHM/Am6ZJBdzYHtwGNsalg=",
+        "name": "cse325-garden-log-blazor.Client.8yb0b75334.wasm",
+        "integrity": "sha256-gLMtTBnzk45DeXWE+DsWKJV64NbDNlLvxrkn3KjYpVU=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "cse325-garden-log-blazor.Client.pdb",
-        "name": "cse325-garden-log-blazor.Client.1m68jkq3lc.pdb",
-        "integrity": "sha256-efYInVEC/xNvb+eMJo+HwQjU8EXVtNoA2uhh3IMX2JA=",
+        "name": "cse325-garden-log-blazor.Client.sndsx8vb50.pdb",
+        "integrity": "sha256-2Dp019z9pe2Du+zaZbbpKBEIDAHbIhYiWh22ZecQEbs=",
         "cache": "force-cache"
       }
     ],
